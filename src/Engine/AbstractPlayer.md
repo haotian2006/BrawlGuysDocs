@@ -55,7 +55,7 @@ Sets the Brawler and update camera if it a local
 
 returns the name of the Player
 
-### setName() -> `String`
+### setName() -> `Boolean`
 `public`
 
-sets the name of the player
+sets the name of the player, returns true if successful

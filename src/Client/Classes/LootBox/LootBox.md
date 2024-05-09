@@ -1,5 +1,5 @@
-# Lobby 
-The lobby
+# LootBox
+
 
 #### status: <span style="color:Red;">Not Started</span>
 ### <span style="color:cyan;">Contributors:</span>
@@ -16,7 +16,7 @@ The lobby
 ```
 ## <span style="color:green;">Fields</span>
 
-### FieldName - `int`
+### LootTable - `int`
 `public`
 
 Holds stuff

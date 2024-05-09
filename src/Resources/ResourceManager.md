@@ -19,6 +19,12 @@ Used to get resources
 
 ## <span style="color:yellow;">Methods</span>
 
-### getResource(path `String`)-> `URL`
+### getResource(path `String`)-> `InputStream`
 `public` | `static`
-returns a url of the resource located
+
+returns a InputStream of the resource requested
+
+### scaleImage(image `BufferedImage`, width `int`, height `int`) -> `BufferedImage`
+`public` | `static`
+
+scales the image 

@@ -1,5 +1,5 @@
-# Lobby 
-The lobby
+# LootTable
+`interface`
 
 #### status: <span style="color:Red;">Not Started</span>
 ### <span style="color:cyan;">Contributors:</span>
@@ -16,14 +16,24 @@ The lobby
 ```
 ## <span style="color:green;">Fields</span>
 
-### FieldName - `int`
-`public`
-
-Holds stuff
-
 ## <span style="color:yellow;">Methods</span>
 
-### doSomething(param `type`)-> `int`
-`public` 
+### getCount -> `int`
+`public`
 
-Method
+how much of something should this contain
+
+### getText -> `String`
+`public`
+
+the text to be displayed
+
+### getImage() -> `String`
+`public`
+
+returns the path of the image to be displayed
+
+### giveLoot(player `Player`)-> `int`
+`public` | `abstract`
+
+This will give the loot to the player
