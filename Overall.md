@@ -86,7 +86,8 @@ Markdown documents for the project
 
 
 <details open>
-  <summary><b>5/3/24</b> </summary>    
+  <summary><b>5/3/24</b> </summary>  
+    
 - Revamped Engine file format
   - GamePanel Combined with world
   - UserInputService methods became non-static
@@ -99,5 +100,26 @@ Markdown documents for the project
 
 - You can move the Entity now with WASD
 </details>
+
+<details open>
+  <summary><b>5/7/24</b> </summary>    
+
+- Start working on UI
+</details>
+
+
+<details open>
+  <summary><b>5/10/24</b> </summary>    
+
+- LootTable and LootBox created
+- fixed bugs in collision
+</details>
+
+<details open>
+  <summary><b>5/12/24</b> </summary>    
+
+- Component system added to entities
+</details>
+
 
 

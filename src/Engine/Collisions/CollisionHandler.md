@@ -13,6 +13,8 @@ The CollisionHandler is responsible for managing collisions between entities and
 ```
 ### <span style="color:red;">Bugs:</span>
 ```diff
++ Collisions break when an axis is -1 
+    Fixed by limiting the range from 1<x<maxX
 ```
 ## <span style="color:green;">Fields</span>
 

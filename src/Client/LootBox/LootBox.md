@@ -1,5 +1,5 @@
 # LootBox
-
+`abstract`
 
 #### status: <span style="color:Red;">Not Started</span>
 ### <span style="color:cyan;">Contributors:</span>
@@ -16,14 +16,17 @@
 ```
 ## <span style="color:green;">Fields</span>
 
-### LootTable - `int`
-`public`
-
-Holds stuff
 
 ## <span style="color:yellow;">Methods</span>
 
-### doSomething(param `type`)-> `int`
-`public` 
+### getLootTable() -> `HashMap<LootTable,int>`
+`abstract`
 
-Method
+returns the lootTable corresponding to the percentage
+
+### getLoot() -> `LootTable`
+`public`
+
+returns a random loot table based of the percentage
+
+

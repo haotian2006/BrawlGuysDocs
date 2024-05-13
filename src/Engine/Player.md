@@ -1,5 +1,6 @@
 # Player
 
+
 #### status: <span style="color:Red;">Not Started</span>
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
@@ -15,12 +16,46 @@
 ```
 ## <span style="color:green;">Fields</span>
 
+### Brawler - `Brawler`
 
-### Client - `Client`
+What brawler is the Player controlling 
 
-This will be the Client (Networking.Client) Associated with the Player
+### IsLocalPlayer - `boolean`
+`public` | `final`
+
+Is the current player also the local Player
+
+
+### Name - `String`
+`private`
+
+Name of the player
+
 
 ## <span style="color:yellow;">Methods</span>
 
-### Method(\<T> x)-> `Class`
-`public` | `constructor`
+### Player(IsLocal `boolean`) -> `Player`
+
+creates a new Abstract player and set IsLocal
+
+### Player() -> `Player`
+
+constructs an abstract player
+
+### getBrawler() -> `Brawler`
+
+This will return the current Brawler the person is using
+
+### setBrawler(brawler `Brawler`)
+
+Sets the Brawler and update camera if it a local 
+
+### getName() -> `String`
+`public`
+
+returns the name of the Player
+
+### setName() -> `Boolean`
+`public`
+
+sets the name of the player, returns true if successful

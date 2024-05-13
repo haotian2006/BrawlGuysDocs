@@ -26,8 +26,46 @@ AABB of the entity
 
 the unique id of the entity
 
+### Physics_Components - `LinkedHashSet<PhysicsComponent>`
+
+Used to store physics components of an entity
+
+### Render_Components - `LinkedHashSet<RenderComponent>`
+
+Used to store render components of an entity
+
 
 ## <span style="color:yellow;">Methods</span>
+
+### defaultPhysicsComponents() -> `LinkedHashSet<PhysicsComponent>`
+`public`
+
+Used by the entity constructor, should return the base components of an entity 
+
+### defaultRenderComponents() -> `LinkedHashSet<RenderComponent>`
+`public`
+
+Used by the entity constructor, should return the base components of an entity 
+
+### addPhysicsComponent(component `PhysicsComponent`) -> `boolean`
+`public`
+
+adds a physics component to the entity
+
+### addRenderComponent(component `RenderComponent`) -> `boolean`
+`public`
+
+adds a render component to the entity
+
+### removePhysicsComponent(component `PhysicsComponent`) -> `boolean`
+`public`
+
+removes a physics component from the entity
+
+### removeRenderComponent(component `RenderComponent`) -> `boolean`
+`public`
+
+removes a render component from the entity
 
 ### onCollision(other: `Entity`) -> `void`
 
