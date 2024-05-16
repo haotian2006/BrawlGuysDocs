@@ -20,7 +20,7 @@ Haotian
 
 ## <span style="color:yellow;">Methods</span>
 
-### update(self `Entity`,g `Graphics2D`,center `Vector2`) -> `void`
+### update(self `Entity`,g `Graphics2D`,center `Vector2`,displayCoords `Vector2`) -> `void`
 `public` | `abstract`
 
 Method that called when updating

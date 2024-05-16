@@ -1,11 +1,11 @@
 # LootBox
 `abstract`
 
-#### status: <span style="color:Red;">Not Started</span>
+#### status: <span style="color:yellow;">In progress</span>
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
 ```diff
-
+    Joey 
 ```
 ### <span style="color:lightgreen;">Notes:</span>
 ```diff

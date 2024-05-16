@@ -66,7 +66,7 @@ Markdown documents for the project
 
 - Entity Created 
 - World Created 
-- Basic rendering of the world created
+- Basic rendering of the engine created
 - UIS created
 - MathLib created
 </details>
@@ -89,7 +89,7 @@ Markdown documents for the project
   <summary><b>5/3/24</b> </summary>  
     
 - Revamped Engine file format
-  - GamePanel Combined with world
+  - GamePanel Combined with engine
   - UserInputService methods became non-static
   - World renamed to engine
 - removed Display
@@ -119,6 +119,23 @@ Markdown documents for the project
   <summary><b>5/12/24</b> </summary>    
 
 - Component system added to entities
+</details>
+
+<details open>
+  <summary><b>5/14/24</b> </summary>    
+
+- Entity can rotate with the mouse
+- Added a triangle image
+- Resized default grid scale from 20 -> 40
+
+</details>
+
+<details open>
+  <summary><b>5/15/24</b> </summary>    
+
+- Moved NetworkHandler to Libs
+- Changed NetworkUser to use Short instead of UUID
+
 </details>
 
 

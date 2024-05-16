@@ -1,11 +1,11 @@
-# Lobby 
-The lobby
+# Game
+This Class will store the Game State and other information such as score and  etc
 
-#### status: <span style="color:yellow;">In progress</span>
+#### status: <span style="color:Red;">Not Started</span>
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
 ```diff
-    Woojin
+
 ```
 ### <span style="color:lightgreen;">Notes:</span>
 ```diff

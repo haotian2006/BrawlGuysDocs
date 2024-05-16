@@ -25,7 +25,7 @@ The CollisionHandler is responsible for managing collisions between entities and
 
 Reference to the `TileHandler` responsible for managing tiles in the game.
 
-### world - `Engine`
+### engine - `Engine`
 `private`
 
 Reference to the main `Engine` instance which contains game logic and manages game state.
@@ -37,7 +37,7 @@ A small epsilon value used in collision resolution to avoid floating-point preci
 
 ## <span style="color:yellow;">Methods</span>
 
-### CollisionHandler(world `Engine`)
+### CollisionHandler(engine `Engine`)
 `public`
 
 Constructor for initializing a new instance of `CollisionHandler` with a reference to the main game engine.
@@ -45,7 +45,7 @@ Constructor for initializing a new instance of `CollisionHandler` with a referen
 ### entityVsTileLoop(entity `Entity`, modifiedAABB `AABB`) -> `Tuple2<Float, Vector2>`
 `private`
 
-Calculates the collision response between an entity and tile objects within the game world, returning the earliest collision time and normal.
+Calculates the collision response between an entity and tile objects within the game engine, returning the earliest collision time and normal.
 
 ### getEntityInBounds(aabb `AABB`) -> `Entity[]`
 `public`
@@ -55,4 +55,4 @@ Overloaded method that retrieves all entities within a specified axis-aligned bo
 ### entityVsTile(entity `Entity`, dt `double`) -> `Vector2`
 `public`
 
-Calculates and resolves collisions between an entity and tiles within the game world for a given time step, returning the new position of the entity after collision resolution.
+Calculates and resolves collisions between an entity and tiles within the game engine for a given time step, returning the new position of the entity after collision resolution.

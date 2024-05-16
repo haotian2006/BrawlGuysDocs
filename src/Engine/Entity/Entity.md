@@ -73,11 +73,50 @@ removes a render component from the entity
 
 what will happen when it collides
 
-### canCollideWith(other: `Entity`) -> `boolean`
+### resize(v `Vector2`) -> `void`
+`public`
 
-`public` | `abstract`
+Resizes the hitbox of the entity
 
-if the entity can collide with the other Entity
+### translate(v `Vector2`) -> `void`
+`public`
+
+Translates the position of the entity
+
+### setVelocity(v `Vector2`) -> `void`
+`public`
+
+Sets the velocity of the entity
+
+### setCenter(v `Vector2`) -> `void`
+`public`
+
+Sets the center of the hitbox of the entity
+
+### setPosition(v `Vector2`) -> `void`
+`public`
+
+Sets the position of the hitbox of the entity
+
+### setAngle(a `int`) -> `void`
+`public`
+
+Sets the angle of the entity
+
+### getCenter() -> `Vector2`
+`public`
+
+Gets the center of the hitbox of the entity
+
+### getPosition() -> `Vector2`
+`public`
+
+Gets the position of the hitbox of the entity
+
+### getVelocity() -> `Vector2`
+`public`
+
+Gets the velocity of the entity
 
 ### update(deltaTime `double`) -> `void`
 
@@ -93,5 +132,5 @@ Gives the Graphics and center of the screen for drawing the entity
 ### destroy() -> `void`
 `public`
 
-Removes the entity from the world 
+Removes the entity from the engine 
 

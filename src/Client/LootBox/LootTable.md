@@ -1,11 +1,11 @@
 # LootTable
 `interface`
 
-#### status: <span style="color:Red;">Not Started</span>
+#### status: <span style="color:green;">Done</span>
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
 ```diff
-
+    joey
 ```
 ### <span style="color:lightgreen;">Notes:</span>
 ```diff

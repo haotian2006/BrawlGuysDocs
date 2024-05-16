@@ -1,5 +1,5 @@
 # Signal `<T>` 
-A simple Signal Class
+This is a library that allows you to create signals and connections. A signal is a way to notify multiple subscribers of an event. The subscribers can then react to the event. Connections are the subscriptions to signals. A connection can be either a one time event or a continuous subscription to the signal. The library also supports a way to await for the next value of the signal to be emitted.
 
 #### status: <span style="color:Green;">Done</span>
 ### <span style="color:cyan;">Contributors:</span>

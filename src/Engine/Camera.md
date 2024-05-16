@@ -5,7 +5,8 @@ Handles Camera Position
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
 ```diff
-Woojin
+Woojin - did most methods
+Haotian - added getRelativeMouseLoc
 
 ```
 ### <span style="color:lightgreen;">Notes:</span>
@@ -18,7 +19,7 @@ Woojin
 
 ## <span style="color:green;">Fields</span>
 
-### Position - `Vector2`
+### Position - `Vector2` 
 `public`
 
 The Position Of the camera
@@ -26,11 +27,18 @@ The Position Of the camera
 ### Subject -`Entity`
 `public`
 
+Which Entity is the Camera Spectating
+
 ### Mode - `CameraMode`
 
-Which Entity is the Camera Spectating, Should be Normal by default
+ If the camera should use Entity or Position for camera Position. Should be Normal by default.
 
 ## <span style="color:yellow;">Methods</span>
+
+### getRelativeMouseLoc() -> `Vector2` 
+`public` 
+
+Returns the relative position of the mouse to the camera in screen coordinates. 
 
 ### setEntity(Entity subject) -> `void` 
 `public`

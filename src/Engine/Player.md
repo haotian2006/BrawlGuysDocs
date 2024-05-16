@@ -21,26 +21,46 @@
 What brawler is the Player controlling 
 
 ### IsLocalPlayer - `boolean`
-`public` | `final`
+`private` 
 
 Is the current player also the local Player
 
+### IsBot - `boolean`
+`private` 
+
+Is the player is a bot
+
+### Wins - `int`
+`public`
+
+How many wins the Player has
 
 ### Name - `String`
 `private`
 
 Name of the player
 
+### Team - `String`
+`private`
+
+The Team which the player is on
+
 
 ## <span style="color:yellow;">Methods</span>
 
-### Player(IsLocal `boolean`) -> `Player`
+### createLocal() -> `Player`
+`public` | `static`
 
-creates a new Abstract player and set IsLocal
+creates a a new player with isLocalPlayer field set to true 
 
 ### Player() -> `Player`
 
 constructs an abstract player
+
+### createBot() -> `player`
+`public` | `static`
+
+creates a Player with the bot field set to true
 
 ### getBrawler() -> `Brawler`
 
@@ -55,7 +75,28 @@ Sets the Brawler and update camera if it a local
 
 returns the name of the Player
 
-### setName() -> `Boolean`
+### setName() -> `boolean`
 `public`
 
 sets the name of the player, returns true if successful
+
+### getTeam() -> `String`
+`public`
+
+returns the team of the Player
+
+### setTeam() -> `void`
+`public`
+
+sets the team of the player
+
+### isBot() -> `boolean`
+`public`
+
+returns if the player is a bot
+
+### isLocal() -> `boolean`
+`public`
+
+returns if the player is the local player
+

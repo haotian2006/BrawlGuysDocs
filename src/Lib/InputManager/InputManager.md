@@ -1,4 +1,4 @@
-# UserInputService
+# InputManager
 A class that handles inputs
 
 #### status: <span style="color:light green;">done</span>

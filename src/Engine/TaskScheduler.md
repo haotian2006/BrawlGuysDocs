@@ -39,8 +39,8 @@ Event that is triggered after the simulation loop
 
 ## <span style="color:yellow;">Methods</span>
 
-### TaskScheduler(world `World`)
+### TaskScheduler(engine `World`)
 `protected`
 
-Creates an initializes the loop for the current world
+Creates an initializes the loop for the current engine
 

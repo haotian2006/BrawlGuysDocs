@@ -26,10 +26,10 @@ Is the client also the server
 
 The Ip of the client
 
-### id - `UUID`
+### id - `Short`
 `private`
 
-UUID of the client
+Short of the client
 
 ### name - `String`
 `private`
@@ -68,7 +68,7 @@ gets the Ip address of the client
 
 Get the name of the client
 
-### getId()-> `UUID`
+### getId()-> `Short`
 `public`
 
 Get the name of the client
@@ -91,6 +91,6 @@ Get the TCPconnection with the server
 ### toString()-> `String`
 `public`
 
-returns the string of the client in the format of "name | isLocal | uuid"
+returns the string of the client in the format of "name | isLocal | Short"
 
 

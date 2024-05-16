@@ -17,10 +17,10 @@ Main Class to handle networking
 ```
 ## <span style="color:green;">Fields</span>
 
-### TIMEOUT - `int`
+### TIMEOUT - `int` 
 `protected` | `final` | `static`
 
-Used to for  client/server disconnection timers.
+Used for client/server disconnection timers.
 
 ### INTERVAL - `int`
 `protected` | `final` | `static`
@@ -41,7 +41,7 @@ Port of the Server
 ### IsServer - `boolean`
 Is it the Server or Client 
 
-### Clients - `HashMap<String,Client>`
+### Clients - `HashMap<Short,Client>`
 Clients connected to the Machine
 
 ### Remotes - `HashMap<String,Remote>`
@@ -140,10 +140,10 @@ Generates a unique client name
 
 returns true if no other client has that name
 
-### getClient(id `UUID`) -> `Client`
+### getClient(id `Short`) -> `Client`
 `public`
 
-Returns a client with the given UUID
+Returns a client with the given Short
 
 ### getClient(packet `Packet`) -> `Client`
 `public`

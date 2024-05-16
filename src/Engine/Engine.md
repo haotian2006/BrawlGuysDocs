@@ -1,9 +1,9 @@
 # Engine
 `Extends JPanel`
 
-Stores the current data of the game Engine and Is the display of the world
+Stores the current data of the game Engine and Is the display of the engine
 
-#### status: <span style="color:Red;">Not Started</span>
+#### status: <span style="color:Yellow;">In progress</span>
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
 ```diff
