@@ -1,7 +1,7 @@
 # Entity
 Base Entity Class
 
-#### status: <span style="color:Red;">Not Started</span>
+#### status: <span style="color:yellow;">In progress</span>
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
 ```diff
@@ -14,123 +14,203 @@ Base Entity Class
 ### <span style="color:red;">Bugs:</span>
 ```diff
 ```
+
+
 ## <span style="color:green;">Fields</span>
 
-### **box** - `AABB`
+### Grid_Scale - `int`
+`public` | `static` | `final`
+
+The grid scale of the entity, retrieved from the TileHandler.
+
+### HitBox - `AABB`
 `public`
 
-AABB of the entity
+The axis-aligned bounding box representing the entity's hitbox.
 
-###  guid - `UUID`
+### Angle - `int`
+`public`
+
+The angle of the entity.
+
+### Scale - `double`
+`public`
+
+The scale of the entity.
+
+### EntityID - `short`
 `public` | `final`
 
-the unique id of the entity
+The ID of the entity.
 
-### Physics_Components - `LinkedHashSet<PhysicsComponent>`
+### ID - `UUID`
+`public` | `final`
 
-Used to store physics components of an entity
+The UUID of the entity.
 
-### Render_Components - `LinkedHashSet<RenderComponent>`
+### engine - `Engine`
+`public` | `final`
 
-Used to store render components of an entity
+Reference to the engine associated with this entity.
 
+### entityHandler - `EntityHandler`
+`public` | `final`
+
+Reference to the entity handler associated with this entity's engine.
+
+### Destroyed - `boolean`
+`public`
+
+Flag indicating if the entity is destroyed.
+
+### Image - `BufferedImage`
+`private`
+
+The image associated with the entity.
+
+### Variant - `String`
+`private`
+
+The variant of the entity.
+
+### Components - `ComponentContainer`
+`private`
+
+The container for the entity's components.
 
 ## <span style="color:yellow;">Methods</span>
 
-### defaultPhysicsComponents() -> `LinkedHashSet<PhysicsComponent>`
+### Entity(Engine engine)
+`public` | `constructor`
+
+Constructor for Entity.
+
+### addComponent(AbstractComponent c)
 `public`
 
-Used by the entity constructor, should return the base components of an entity 
+Adds a component to the entity.
 
-### defaultRenderComponents() -> `LinkedHashSet<RenderComponent>`
+### addComponent(AbstractComponent c, int index)
 `public`
 
-Used by the entity constructor, should return the base components of an entity 
+Adds a component to the entity at a specified index.
 
-### addPhysicsComponent(component `PhysicsComponent`) -> `boolean`
+### getComponent(Class<? extends AbstractComponent> c) -> `T`
 `public`
 
-adds a physics component to the entity
+Gets a component from the entity based on its class.
 
-### addRenderComponent(component `RenderComponent`) -> `boolean`
+### hasComponent(Class<? extends AbstractComponent> c) -> `boolean`
 `public`
 
-adds a render component to the entity
+Checks if the entity has a component of the specified class.
 
-### removePhysicsComponent(component `PhysicsComponent`) -> `boolean`
+### updateImage(String path)
+`private`
+
+Updates the entity's image based on the provided path.
+
+### getImagePathFromVariant() -> `String`
 `public`
 
-removes a physics component from the entity
+Gets the image path based on the entity's variant.
 
-### removeRenderComponent(component `RenderComponent`) -> `boolean`
+### setVariant(String v)
 `public`
 
-removes a render component from the entity
+Sets the variant of the entity.
 
-### onCollision(other: `Entity`) -> `void`
-
-`public` | `abstract`
-
-what will happen when it collides
-
-### resize(v `Vector2`) -> `void`
+### getImage() -> `BufferedImage`
 `public`
 
-Resizes the hitbox of the entity
+Gets the image associated with the entity.
 
-### translate(v `Vector2`) -> `void`
+### setScale(double s)
 `public`
 
-Translates the position of the entity
+Sets the scale of the entity.
 
-### setVelocity(v `Vector2`) -> `void`
+### hashCode() -> `int`
+`@Override` | `public`
+
+Returns the hash code of the entity.
+
+### equals(Object obj) -> `boolean`
+`@Override` | `public`
+
+Checks if two entities are equal.
+
+### resize(Vector2 v)
 `public`
 
-Sets the velocity of the entity
+Resizes the entity.
 
-### setCenter(v `Vector2`) -> `void`
+### translate(Vector2 v)
 `public`
 
-Sets the center of the hitbox of the entity
+Translates the entity.
 
-### setPosition(v `Vector2`) -> `void`
+### setVelocity(Vector2 v)
 `public`
 
-Sets the position of the hitbox of the entity
+Sets the velocity of the entity.
 
-### setAngle(a `int`) -> `void`
+### setCenter(Vector2 v)
 `public`
 
-Sets the angle of the entity
+Sets the center of the entity.
+
+### setPosition(Vector2 v)
+`public`
+
+Sets the position of the entity.
+
+### setAngle(int a)
+`public`
+
+Sets the angle of the entity.
 
 ### getCenter() -> `Vector2`
 `public`
 
-Gets the center of the hitbox of the entity
+Gets the center of the entity.
 
 ### getPosition() -> `Vector2`
 `public`
 
-Gets the position of the hitbox of the entity
+Gets the position of the entity.
 
 ### getVelocity() -> `Vector2`
 `public`
 
-Gets the velocity of the entity
+Gets the velocity of the entity.
 
-### update(deltaTime `double`) -> `void`
-
-`public` | `abstract`
-
-updates the Entity
-
-### draw(graphics `Graphics2D`,center `Vector2`) -> `void`
-`public` | `abstract`
-
-Gives the Graphics and center of the screen for drawing the entity
-
-### destroy() -> `void`
+### onCollision(Object o) -> `boolean`
 `public`
 
-Removes the entity from the engine 
+Checks if the entity collides with an object.
 
+### update(double dt)
+`public`
+
+Updates the entity.
+
+### getDisplayCoords(Vector2 center) -> `Vector2`
+`public`
+
+Gets the display coordinates of the entity.
+
+### getDisplaySize() -> `int`
+`public`
+
+Gets the display size of the entity.
+
+### draw(Graphics2D g, Vector2 center)
+`public`
+
+Draws the entity.
+
+### destroy()
+`public`
+
+Destroys the entity.
