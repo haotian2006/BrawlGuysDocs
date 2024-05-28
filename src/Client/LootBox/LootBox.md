@@ -1,4 +1,6 @@
 # LootBox
+### <span style="color:red;">DEPREDATED</span>
+
 `abstract`
 
 #### status: <span style="color:yellow;">In progress</span>

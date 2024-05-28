@@ -1,79 +1,75 @@
+# TaskScheduler Class
+The `TaskScheduler` class provides functionality for scheduling tasks to be executed at specified intervals or delays. It manages the execution of tasks in a loop, ensuring that they are performed in a timely manner.
 
-# TaskScheduler
-A Task Scheduler for handling game loops
-
-#### status: <span style="color:yellow;">Working On</span>
+#### status: <span style="color:green;">Completed</span>
 ### <span style="color:cyan;">Contributors:</span>
-<!--put your names here between the ``` if you worked on it, and put what you did-->
+<!-- List contributors and their contributions here. For example: -->
+
 ```diff
-    haotian - got a working system
-```
-### <span style="color:lightgreen;">Notes:</span>
-```diff
- 3/13/2024 Class was created
-```
-### <span style="color:red;">Bugs:</span>
-```diff
+    Haotian - created class and methods
 ```
 
-# <span style="color:green;">Fields</span>
+## <span style="color:yellow;">Fields</span>
+### clockHZ `final int`
+Represents the frequency of the task scheduler's clock in Hertz.
 
-### clockHZ - `int`
-`private` 
+### loop `ScheduledExecutorService`
+A scheduled executor service used for executing tasks at specified intervals.
 
-how fast should the clock run
+### timePassed `long`
+Tracks the time passed since the task scheduler started.
 
-### PreRender - `Event<Double>`
-`public` | `final`
+### preRenderTime, preSimulationTime, postSimulationTime, simulationTime `long`
+Variables used for measuring time intervals during the rendering and simulation phases.
 
-Event that is triggered before rendering
+### isLooping `boolean`
+Indicates whether the task scheduler is currently executing tasks.
 
-### PreSimulation - `Event<Double>`
-`public` | `final`
+### taskStack `Stack<Task>`
+A stack used for temporarily storing tasks while the scheduler is looping.
 
-Event that is triggered before the simulation loop
+### tasksPQ `PriorityQueue<SchedulerTask>`
+A priority queue used for storing tasks based on their scheduled delay.
 
-### PostSimulation - `Event<Double>`
-`public` | `final`
+### taskList `ArrayList<SchedulerTask>`
+`deprecated`
 
-Event that is triggered after the simulation loop
+An array list used for storing tasks in order of their scheduled delay.
 
 ## <span style="color:yellow;">Methods</span>
-
-### TaskScheduler(engine `World`)
-`protected`
-
-Creates an initializes the loop for the current engine
-
-### TaskScheduler(Engine engine, int clockHZ)
-`public`
-
-Creates an initializes the loop for the current engine with a specified clock rate
 
 ### pause()
 `public`
 
-Stops the loop from running
+Pauses the execution of tasks by setting the `running` flag to `false`.
 
 ### resume()
 `public`
 
-Resumes the loop from running
+Resumes the execution of tasks by setting the `running` flag to `true`.
 
 ### stop()
 `public`
 
-Stops the loop from running and closes the thread
+Stops the task scheduler, shutting down the loop executor service.
 
-## <span style="color:green;">Constructors</span>
-
-### TaskScheduler(Engine engine)
-`protected`
-
-Creates an initializes the loop for the current engine
-
-### TaskScheduler(Engine engine, int clockHZ)
+### scheduleTask(seconds `double`, x `lambda`)
 `public`
 
-Creates an initializes the loop for the current engine with a specified clock rate
+Schedules a task to be executed after a specified delay in seconds. The `lambda` represents the action to be performed.
+
+### scheduleTask(seconds `double`, x `Consumer<T>`, data `T`)
+`public`
+
+Schedules a task to be executed after a specified delay in seconds, passing additional data of type `T` to the consumer function `x`.
+
+### scheduleForEachTask(seconds `double`, data `T[]`, x `Consumer<T>`)
+`public`
+
+Schedules a task to iterate over each element in the `data` array, executing the consumer function `x` for each element after a specified delay in seconds.
+
+### scheduleForTask(seconds `double`, iterations `int`, x `Consumer<Integer>`)
+`public`
+
+Schedules a task to execute the consumer function `x` for a specified number of iterations after a delay of `seconds` seconds.
 

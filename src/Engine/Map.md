@@ -1,26 +1,82 @@
 # Map
-`Interface`
+`abstract`
+
+#### status: <span style="color:Red;">Not Started</span>
+### <span style="color:cyan;">Contributors:</span>
+<!--put your names here between the ``` if you worked on it, and put what you did-->
+```diff
+
+```
+### <span style="color:lightgreen;">Notes:</span>
+```diff
+
+```
+### <span style="color:red;">Bugs:</span>
+```diff
+```
+
+
+## <span style="color:green;">Fields</span>
+
+### image - `BufferedImage`
+
+### charMap - `char[][]`
+`public`
+
+The 2D char array that represents the map
 
 ## <span style="color:yellow;">Methods</span>
 
-### getSize() -> `Vector2d`
-returns the size of the map
+### Map(String s)
+`public` 
 
-### getBackGround() -> `String`
-returns the image used for the background
+Initializes the charMap with the given Map String. For this insert the characters in the given string into the charMap. A example of a string will be:
+```
+xxxxx
+xxxxx
+xxxxx
+```
 
-### getImageSize() -> `Vector2d`
-return `null` if not need to resize
+This will also Initialize the image field
+
+### getMapFile() -> `String`
+`public` | `abstract`
+
+Returns the file path of the map layout relative to ResourceHandler
+
+### getImage() -> `String`
+`public` | `abstract`
+
+Returns the file path of the image relative to ResourceHandler
 
 
+### getGameMode() -> `GameMode`
+`public` | `abstract`
 
-### update(dt `double`) -> `void`
+Returns the GameMode that the map will use
+
+### getGameMode() -> `GameMode`
+`public` | `abstract`
+
+Returns the GameMode that the map will use
+
+### getName() -> `String`
+`public` | `abstract`
+
+Returns the name of the map
+
+### getDescription() -> `String`
+`public` | `abstract`
+
+Returns the description of the map
+
+### length() -> `int`
 `public`
 
-Called every frame
+Gets the X size of the map
 
-### draw(graphics `Graphics2D`) - `void`
+### width() -> `int` 
 `public`
 
-Handles the rendering of the map
+Gets the Y size of the map
 

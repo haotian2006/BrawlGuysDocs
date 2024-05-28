@@ -1,4 +1,6 @@
-# LootTable
+# LootTable 
+### <span style="color:red;">DEPREDATED</span>
+
 `interface`
 
 #### status: <span style="color:green;">Done</span>

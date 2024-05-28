@@ -1,11 +1,11 @@
 # Lobby 
-The lobby
+Main Screen for the lobby
 
 #### status: <span style="color:yellow;">In progress</span>
 ### <span style="color:cyan;">Contributors:</span>
 <!--put your names here between the ``` if you worked on it, and put what you did-->
 ```diff
-    Woojin
+
 ```
 ### <span style="color:lightgreen;">Notes:</span>
 ```diff
@@ -16,14 +16,40 @@ The lobby
 ```
 ## <span style="color:green;">Fields</span>
 
-### FieldName - `int`
-`public`
+### iPAddress - `string`
+`public` 
 
-Holds stuff
+The target IP for this lobby
+
+### Port - `int`
+`public` 
+
+The target port for this lobby
+
+
+
+### sessionManager - `SessionManager`
+`public` | `final`
+
+The SessionManager for this lobby
 
 ## <span style="color:yellow;">Methods</span>
 
-### doSomething(param `type`)-> `int`
-`public` 
+### Lobby()
+`public`
 
-Method
+Constructor for the lobby
+
+### connect()
+`public`
+
+attempt to connect to the lobby
+
+
+### create()
+`public`
+
+attempt to create the lobby
+
+
+

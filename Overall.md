@@ -140,15 +140,40 @@ Markdown documents for the project
 
 
 <details open>
-  <summary><b>5/15624</b> </summary>    
+  <summary><b>5/16/24</b> </summary>    
 
 - Reworked Component system
 - Added Replication
 - IdGenerator done
-- UiChanged
+- Ui Changed
 
 </details>
+<details open>
+  <summary><b>5/21/24</b> </summary>   
 
+  - Entity Replication
+  - Lobby Ui Rework
+  - Session manager connected to Client
+  - AiController
+  -  Fps changes from 60 HZ -> 30 HZ
+  -  A* PathFinding Alg
+
+  
+</details>
+
+
+<details open>
+  <summary><b>5/23/24</b> </summary>   
+
+  - Fixed Entity Replication 
+  - Improved Ai Logic
+  - New circle entity
+  - Coroutine system (a bit flawed)
+  - Change Scheduler loop to a while loop
+  - Session manager connected to UI
+  - Task Function with Method Chaining  
+  
+</details>
 
 
 
