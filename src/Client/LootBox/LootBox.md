@@ -1,5 +1,5 @@
 # LootBox
-### <span style="color:red;">DEPREDATED</span>
+### <span style="color:red;">DEPRECATED</span>
 
 `abstract`
 
